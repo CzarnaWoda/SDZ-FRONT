@@ -2,8 +2,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "target": "ES5",
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [
+      "node"
+    ]
   },
   "files": [
     "src/main.ts"

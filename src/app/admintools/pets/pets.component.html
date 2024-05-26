@@ -1,0 +1,44 @@
+
+
+<div class="wrelative overflow-x-auto shadow-md sm:rounded-lg p-12 m-auto">
+  <table class=" w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+              <th scope="col" class="px-6 py-3">
+                  Name | Race
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Id
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Gender
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Description
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Action
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let pet of pets" class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  {{pet.name}} | {{pet.race}}
+              </th>
+              <td class="px-6 py-4">
+                  {{pet.id}}
+              </td>
+              <td class="px-6 py-4">
+                  {{pet.gender}}
+              </td>
+              <td class="px-6 py-4">
+                  {{pet.description}}
+              </td>
+              <td class="px-6 py-4">
+                  <a class="font-medium text-red-600 dark:text-red-500 hover:underline">Remove</a>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
